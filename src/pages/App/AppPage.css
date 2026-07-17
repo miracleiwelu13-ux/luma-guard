@@ -1,0 +1,239 @@
+.app-page {
+  background: #0a0a0a;
+  min-height: 100vh;
+  padding: 140px 60px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-page::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.14) 0%, transparent 70%);
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.app-page-container {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.app-page-content {
+  background: #141414;
+  border: 1px solid #1a1a1a;
+  border-top: 3px solid #a855f7;
+  border-radius: 20px;
+  padding: 50px 40px;
+}
+
+.app-page-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(168, 85, 247, 0.10);
+  border: 1px solid rgba(168, 85, 247, 0.30);
+  color: #a855f7;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 22px;
+}
+
+.app-page-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+}
+
+.app-page-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.app-page-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.app-page-subtitle {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #999;
+  margin-bottom: 24px;
+}
+
+.app-platform-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.app-platform-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid #1a1a1a;
+  background: #0a0a0a;
+  color: #999;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.app-page-features {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-feature-item {
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-feature-check {
+  font-weight: 700;
+  color: #a855f7;
+  flex-shrink: 0;
+}
+
+.app-page-form {
+  margin-bottom: 20px;
+}
+
+.app-form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.app-form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.app-form-input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  color: #FFFFFF;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-input:focus {
+  border-color: #a855f7;
+}
+
+.app-form-input::placeholder {
+  color: #666;
+}
+
+.app-form-btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  background: #a855f7;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.app-form-btn:hover {
+  background: #9333ea;
+}
+
+.app-waitlist-count {
+  font-size: 12px;
+  color: #666;
+  margin-top: 12px;
+}
+
+.app-page-success {
+  background: rgba(168, 85, 247, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.app-success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #a855f7;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.app-page-success p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+.app-page-note {
+  font-size: 12px;
+  font-style: italic;
+  color: #999;
+}
+
+@media (max-width: 600px) {
+  .app-page {
+    padding: 120px 20px 60px;
+  }
+
+  .app-page-content {
+    padding: 35px 20px;
+  }
+
+  .app-form-row {
+    flex-direction: column;
+  }
+}

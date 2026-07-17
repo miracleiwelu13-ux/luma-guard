@@ -1,0 +1,230 @@
+.vision-page {
+  min-height: 100vh;
+}
+
+/* ── Intro ── */
+.vision-intro {
+  background: #0a0a0a;
+  padding: 140px 60px 80px;
+  text-align: center;
+}
+
+.vision-intro-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.vision-page-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(168, 85, 247, 0.10);
+  border: 1px solid rgba(168, 85, 247, 0.30);
+  color: #a855f7;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 22px;
+}
+
+.vision-page-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.vision-page-subtitle {
+  font-size: 15px;
+  color: #999;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.vision-page-image {
+  margin-bottom: 40px;
+}
+
+.vision-page-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  border: 1px solid #1a1a1a;
+}
+
+.vision-page-quote {
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #E8E9F0;
+  line-height: 1.6;
+  border-left: 3px solid #a855f7;
+  padding-left: 20px;
+  margin: 0 0 12px;
+  text-align: left;
+}
+
+.vision-page-attribution {
+  font-size: 14px;
+  color: #999;
+}
+
+/* ── Alternating sections ── */
+.vision-section {
+  padding: 80px 60px;
+}
+
+.vision-section-container {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.vision-section-light {
+  background: #FAFAF9;
+}
+
+.vision-section-light .vision-page-subheading {
+  color: #a855f7;
+}
+
+.vision-section-light .vision-page-text {
+  color: #0C0C0C;
+}
+
+.vision-section-dark {
+  background: #0a0a0a;
+}
+
+.vision-section-dark .vision-page-subheading {
+  color: #a855f7;
+}
+
+.vision-section-dark .vision-page-text {
+  color: #E8E9F0;
+}
+
+.vision-page-subheading {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.vision-page-text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ── Stat row, lives in the light "Problem" section ── */
+.vision-stat-row {
+  display: flex;
+  gap: 20px;
+  margin: 32px 0 0;
+  flex-wrap: wrap;
+}
+
+.vision-stat-item {
+  flex: 1;
+  min-width: 140px;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E5;
+  border-top: 3px solid #a855f7;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.vision-stat-number {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #a855f7;
+  margin-bottom: 6px;
+}
+
+.vision-stat-label {
+  display: block;
+  font-size: 12px;
+  color: #5C5C68;
+  line-height: 1.4;
+}
+
+/* ── Closing CTA ── */
+.vision-cta {
+  background: #0a0a0a;
+  padding: 90px 60px;
+  text-align: center;
+  border-top: 1px solid #1a1a1a;
+}
+
+.vision-cta-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.vision-cta-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.vision-cta-text {
+  font-size: 15px;
+  color: #999;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.vision-cta-btn {
+  display: inline-block;
+  background: #a855f7;
+  color: #FFFFFF;
+  padding: 14px 34px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.vision-cta-btn:hover {
+  background: #9333ea;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .vision-intro {
+    padding: 120px 20px 60px;
+  }
+
+  .vision-section {
+    padding: 60px 20px;
+  }
+
+  .vision-cta {
+    padding: 70px 20px;
+  }
+
+  .vision-page-heading {
+    font-size: 32px;
+  }
+
+  .vision-page-quote {
+    font-size: 20px;
+  }
+
+  .vision-stat-row {
+    flex-direction: column;
+  }
+}
