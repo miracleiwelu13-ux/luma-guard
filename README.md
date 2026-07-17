@@ -1,16 +1,31 @@
-# React + Vite
+# LumaGuard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A digital wellness platform designed to help parents protect their children from harmful content online. Features content blocking tools, an interactive self-assessment quiz, a resource library, and a clean multi-page layout.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Multi-page layout with React Router
+- Interactive self-assessment quiz with progress tracking
+- Tabbed resource library covering digital wellness topics
+- Pricing plans for individuals, families, and schools
+- FAQ accordion
+- Responsive design with video background hero
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Landing Page
+- Vision
+- Features
+- Plans
+- Test
+- Resources
+- FAQ
+- App (Coming Soon)
 
-## Expanding the Oxlint configuration
+## Tech
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+React, React Router, Vite, CSS3
+
+---
+
+Built by **Miracle A.I**
