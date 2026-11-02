@@ -1,0 +1,191 @@
+/* --- Top Header --- */
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: rgba(10, 12, 16, 0.7); /* The smoky color you liked */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- LEFT SIDE (Menu + Logo) --- */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.menu-btn:hover {
+  color: var(--text-main);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-logo-icon {
+  color: var(--glow-blue);
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 8px rgba(10, 132, 255, 0.4));
+}
+
+/* --- RIGHT SIDE (CTA) --- */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-cta {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.nav-cta:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- Side Drawer (Keep as is) --- */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 1001;
+}
+
+.nav-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  background: #0a0c10;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1002;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-shadow: 20px 0 50px rgba(0,0,0,0.5);
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.drawer-logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--glow-blue);
+  letter-spacing: 0.1em;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: var(--text-main);
+}
+
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.drawer-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.drawer-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+
+.drawer-link.active {
+  color: var(--glow-blue);
+  background: rgba(10, 132, 255, 0.1);
+}
+
+.drawer-footer {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawer-footer .btn-primary {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Mobile adjustment */
+@media (max-width: 600px) {
+  .nav-logo {
+    font-size: 0.9rem;
+  }
+  .nav-logo span {
+    display: none; /* Hide the text "LUMA GUARD" on very small screens, keep the icon */
+  }
+  .nav-cta {
+    display: none; /* Hide CTA on mobile, use drawer instead */
+  }
+  .nav-drawer {
+    width: 85vw;
+  }
+}

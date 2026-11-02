@@ -1,0 +1,147 @@
+.features-page {
+  padding: 140px 24px 100px 24px;
+  background-color: var(--bg-void);
+  min-height: 100vh;
+}
+
+.features-page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.features-page-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.features-page-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.features-page-header p {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Grid --- */
+.features-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.fp-card {
+  background: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.fp-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* --- Tier Badges --- */
+.tier-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tier-badge.premium {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.tier-badge.group {
+  background: rgba(10, 132, 255, 0.1);
+  color: var(--glow-blue);
+  border: 1px solid rgba(10, 132, 255, 0.2);
+}
+
+/* --- Icons --- */
+.fp-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+.fp-icon.free {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fp-icon.premium {
+  background: rgba(255, 215, 0, 0.05);
+  color: #ffd700;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.fp-icon.group {
+  background: rgba(10, 132, 255, 0.05);
+  color: var(--glow-blue);
+  border: 1px solid rgba(10, 132, 255, 0.2);
+}
+
+.fp-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.fp-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* --- CTA Section --- */
+.features-page-cta {
+  text-align: center;
+  padding: 60px 40px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.features-page-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .cta-buttons {
+    flex-direction: column;
+  }
+}

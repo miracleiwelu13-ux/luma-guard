@@ -1,0 +1,251 @@
+.get-started-page {
+  padding: 160px 24px 100px 24px;
+  background-color: var(--bg-void);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.get-started-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* --- Left Side: Content --- */
+.gs-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-top: 16px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.gs-content > p {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Form */
+.gs-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.gs-form input {
+  flex: 1;
+  background: var(--bg-surface);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+  color: var(--text-main);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.gs-form input:focus {
+  border-color: var(--glow-blue);
+}
+
+.gs-form button {
+  white-space: nowrap;
+}
+
+/* Success state */
+.gs-success {
+  background: rgba(39, 201, 63, 0.1);
+  border: 1px solid rgba(39, 201, 63, 0.3);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.gs-success i {
+  color: #27c93f;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.gs-success h3 {
+  color: var(--text-main);
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.gs-success p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Features List */
+.gs-features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.gs-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.gs-feature i {
+  color: var(--glow-blue);
+}
+
+/* --- Right Side: Laptop Mockup --- */
+.gs-visual {
+  position: relative;
+}
+
+.laptop-mockup {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.laptop-screen {
+  background: #0a0c10;
+  border: 12px solid #1a1d24;
+  border-radius: 12px 12px 0 0;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 60px rgba(10, 132, 255, 0.1);
+  transform: rotateY(-5deg) rotateX(2deg);
+}
+
+.laptop-base {
+  height: 16px;
+  background: #1a1d24;
+  border-radius: 0 0 16px 16px;
+  width: 110%;
+  margin-left: -5%;
+  position: relative;
+}
+
+.laptop-base::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 4px;
+  background: #0a0c10;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Fake Browser UI */
+.browser-bar {
+  background: #0f1115;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #333;
+}
+
+.url-bar {
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 40px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  color: #666;
+  font-family: monospace;
+}
+
+/* Extension UI inside screen */
+.extension-ui {
+  padding: 40px;
+}
+
+.ext-status {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.ext-status i {
+  font-size: 2.5rem;
+  color: var(--glow-blue);
+  filter: drop-shadow(0 0 15px rgba(10, 132, 255, 0.5));
+}
+
+.ext-status h4 {
+  font-size: 1.2rem;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.ext-status p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.ext-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+}
+
+.stat-num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .get-started-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .gs-form {
+    flex-direction: column;
+  }
+  
+  .gs-features-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
