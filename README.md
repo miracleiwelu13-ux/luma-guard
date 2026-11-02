@@ -1,16 +1,48 @@
-# React + Vite
+<div align="center">
+  <br />
+  <a href="https://github.com/YOUR-USERNAME/YOUR-REPO-NAME">
+    <img src="public/android-chrome-192x192.png" alt="LumaGuard Logo" width="80" height="80">
+  </a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+  <h3 align="center">LumaGuard</h3>
 
-Currently, two official plugins are available:
+  <p align="center">
+    The blocker that actually blocks.
+    <br />
+    <a href="YOUR-VERCEL-LINK-HERE"><strong>View Live Site »</strong></a>
+  </p>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛡️ About The Project
 
-## React Compiler
+LumaGuard is a next-generation focus and porn-blocking tool designed for when willpower isn't enough. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Unlike traditional blockers that let you bypass them the second an urge hits, LumaGuard is built like a vault. When a user tries to access a blocked site, a mandatory 60-minute timer starts. If they leave the tab, refresh, or try again, the timer resets. To uninstall the extension, users must perfectly type a randomized 250-word paragraph.
 
-## Expanding the Oxlint configuration
+This repository contains the **marketing landing page** for the LumaGuard Chrome Extension. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Built With
+
+*   [React.js](https://reactjs.org/)
+*   [Vite](https://vitejs.dev/)
+*   [Framer Motion](https://www.framer.com/motion/)
+*   [Bootstrap Icons](https://icons.getbootstrap.com/)
+*   [React Router](https://reactrouter.com/)
+
+## ⚙️ Features
+
+*   **Cinematic UI:** Deep black and glowing blue "Vault" aesthetic with smooth page transitions.
+*   **Interactive Assessment:** A 5-question diagnostic test that calculates the user's relationship with porn and provides empathetic feedback.
+*   **Dynamic Pricing:** Clearly separates the Free (Lifeline), Pro, and Squad (Group) tiers to prevent false advertising.
+*   **Resource Library:** A fully built article system with a dynamic router for reading recovery content.
+*   **Panic Page:** A dedicated `/panic` route that hides the navbar/footer and provides a full-screen breathing exercise and AI companion for users in crisis.
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
