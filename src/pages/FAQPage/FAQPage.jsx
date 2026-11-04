@@ -6,11 +6,11 @@ import './FAQPage.css'
 const faqs = [
   {
     q: "Can I just uninstall LumaGuard when I get an urge?",
-    a: "You can try, but we've made it really hard on purpose. First you have to wait out the 60-minute timer. Then, to remove the extension, you have to type a random 250-word paragraph without a single mistake. One typo and the page resets. By the time you finish, the urge has usually passed."
+    a: "Not right away. On Free, you type a short 50-word self-help passage first. On Premium, hitting uninstall sends a message to your Accountability Partner instead. Either way, a 24-hour cooldown follows. When it ends, we check in once more: 'You asked to remove LumaGuard yesterday. Still want to go ahead?' If you do, we let you go, no judgment."
   },
   {
     q: "Is the free version actually useful, or just a demo?",
-    a: "It's the real thing. The free version includes the 60-minute timer, the Typo Key, breathing exercises, and a daily allowance of AI messages. We don't put basic safety behind a paywall."
+    a: "It's the real thing. Free includes the 60-minute timer, incognito coverage, breathing exercises, and the uninstall cooldown. We don't put basic safety behind a paywall."
   },
   {
     q: "What happens if I try to visit a blocked site in a new tab?",
@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     q: "How does the Squad plan work?",
-    a: "Up to 4 people can link their accounts and see each other's streaks. If someone tries to get around the vault, their Accountability Partner gets an email. Think of it as multiplayer mode for quitting."
+    a: "Up to 4 people can link their accounts. Your personal streak never resets because of anyone else, and the group streak only counts days when everyone stays clean. If someone tries to bypass the vault, the alert goes privately to their partner, who decides whether to tell the group. Everyone else only sees an overall status, like '3 of 4 clean today.'"
   },
   {
     q: "Will this block apps on my phone?",
-    a: "The free version blocks Chrome on your computer. Pro and Squad include Multi-Device Sync, so you can lock down Safari on iOS, Chrome on Android, and your desktop browsers all at once."
+    a: "The free version blocks Chrome on your computer. Pro and Squad will include Multi-Device Sync in a future update, so you'll be able to lock down Safari on iOS, Chrome on Android, and your desktop browsers all at once."
   }
 ]
 
@@ -51,7 +51,7 @@ export default function FAQPage() {
             
             <div className="faq-contact-box">
               <h4>Still have questions?</h4>
-              <p>Can't find what you're looking for? Reach out and a real person will get back to you.</p>
+              <p>Can't find what you're looking for? Reach out and our team will get back to you.</p>
               <Link to="/contact" className="btn-secondary">Get in touch</Link>
             </div>
           </div>

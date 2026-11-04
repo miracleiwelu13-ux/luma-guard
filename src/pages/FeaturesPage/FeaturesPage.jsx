@@ -2,65 +2,88 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './FeaturesPage.css'
 
-// We'll structure the features by category and clearly mark the tier
 const features = [
   // --- THE CORE (FREE) ---
   {
     icon: 'bi-hourglass-split',
-    title: 'The 60-Minute Timer',
-    desc: 'When the urge hits and you try to access a blocked site, a mandatory 60-minute timer starts. If you leave the tab or try to refresh, it resets to zero.',
+    title: 'The 60-Minute Wall',
+    desc: 'Try to open a blocked site and a 60-minute timer kicks in. Leave the tab, refresh, or search again, and it starts over from zero.',
     tier: 'free'
   },
   {
-    icon: 'bi-shield-lock',
-    title: 'The 250-Word Typo Key',
-    desc: 'The only way to uninstall LumaGuard is to type out a randomized 250-word paragraph perfectly. One typo and it resets. By the time you finish, the urge is gone.',
+    icon: 'bi-keyboard',
+    title: 'The 50-Word Free Key',
+    desc: "To uninstall the Free version, you first type a short self-help passage. Just enough friction to break the trance. Then a 24-hour cooldown begins, and when it ends we check in: 'You asked to remove LumaGuard yesterday. Still want to go ahead?'",
+    tier: 'free'
+  },
+  {
+    icon: 'bi-incognito',
+    title: 'Incognito Covered',
+    desc: 'Private browsing is no way around it. The 60-minute wall applies in incognito windows too.',
+    tier: 'free'
+  },
+  {
+    icon: 'bi-calendar-heart',
+    title: 'Grace Days',
+    desc: "You get 1 or 2 free misses a month, so one rough night doesn't wipe out your streak.",
     tier: 'free'
   },
   {
     icon: 'bi-wind',
-    title: 'Basic Breathing & Focus',
-    desc: 'Simple, guided breathing exercises to help calm your nervous system while you wait out the timer.',
-    tier: 'free'
-  },
-  {
-    icon: 'bi-chat-dots',
-    title: 'AI Urge Companion',
-    desc: 'Talk to our AI when you are struggling. The free tier includes a daily allowance of messages to help you ride out the wave.',
+    title: 'Zero-Cost Breathing',
+    desc: 'Guided breathing exercises, ready whenever you need them, to help you settle while the timer runs. Works without internet.',
     tier: 'free'
   },
   
   // --- THE UPGRADES (PREMIUM) ---
   {
-    icon: 'bi-cpu',
+    icon: 'bi-chat-dots',
     title: 'Unlimited AI Companion',
-    desc: 'Deep, unlimited conversations with the AI. Track your triggers, analyze patterns over time, and get personalized support whenever you need it.',
+    desc: 'Free has breathing exercises for urge moments. Premium adds deeper, unlimited conversations, so you can work out your triggers and get support that fits you.',
+    tier: 'premium'
+  },
+  {
+    icon: 'bi-shield-check',
+    title: 'The Partner Uninstall Flow',
+    desc: "Instead of typing a passage, hitting 'Uninstall' on Premium sends a private message to your Accountability Partner: 'I am trying to uninstall. Talk me down?' The 24-hour cooldown still applies.",
     tier: 'premium'
   },
   {
     icon: 'bi-controller',
     title: 'Full Distraction Library',
-    desc: 'Access an expanding library of mini-games, puzzles, and high-quality focus soundscapes to break the trance.',
+    desc: 'A growing library of mini-games, puzzles, and focus soundscapes to pull your attention somewhere else.',
     tier: 'premium'
   },
   {
     icon: 'bi-phone',
     title: 'Multi-Device Sync',
-    desc: 'Protect your laptop, your phone, and your tablet. If you try to bypass the block on one device, the others know.',
+    desc: 'Cover your laptop, phone, and tablet together. If you try to get around the block on one, the others know.',
     tier: 'premium'
   },
 
   // --- THE MULTIPLAYER (GROUP) ---
   {
     icon: 'bi-people',
-    title: 'Joint Streaks',
-    desc: 'Link your account with a friend. If either of you slips up, the streak breaks. Recovery is easier when you are accountable to someone else.',
+    title: 'Private & Joint Streaks',
+    desc: 'Your personal streak never resets when a friend slips. The group streak only counts days when everyone stays clean. No shame in either one.',
     tier: 'group'
   },
   {
     icon: 'bi-envelope-paper',
-    title: 'Accountability Partner Alerts',
-    desc: 'Assign a trusted friend or sponsor. If you attempt to bypass the vault, they instantly receive an email notification.',
+    title: 'Accountability Alerts',
+    desc: "Pick a friend you trust. If you try to bypass the vault, your designated partner gets a private notification right away, and they decide whether to tell the group. Everyone else only sees an overall status, like '3 of 4 clean today.'",
+    tier: 'group'
+  },
+  {
+    icon: 'bi-chat-heart',
+    title: 'Group Check-Ins',
+    desc: 'Check in together, run shared breathing sessions, and cheer each other on. Squad stays worth it even in a rough week.',
+    tier: 'group'
+  },
+  {
+    icon: 'bi-trophy',
+    title: 'Milestone Rewards',
+    desc: 'Earn badges and cosmetics at 5 days, 1 week, and 1 month. Your personal best is always saved, even if you slip.',
     tier: 'group'
   }
 ]

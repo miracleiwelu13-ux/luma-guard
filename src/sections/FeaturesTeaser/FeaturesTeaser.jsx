@@ -3,31 +3,48 @@ import { motion } from 'framer-motion'
 import './FeaturesTeaser.css'
 
 const topFeatures = [
+  // --- FREE TIER ---
   {
     icon: 'bi-hourglass-split',
-    title: 'The 60-Minute Timer',
-    desc: 'Most urges pass within 15 minutes. The timer keeps everything locked for a full hour, and if you leave the tab, it starts over.',
+    title: 'The 60-Minute Wall',
+    desc: 'Try to open a blocked site and a 60-minute timer kicks in. Leave the tab or refresh, and it starts over from zero.',
     color: 'blue',
     paid: false
   },
   {
-    icon: 'bi-shield-lock',
-    title: 'The Typo Key',
-    desc: 'Thinking about uninstalling? First you\'ll have to type a 250-word paragraph without a single mistake.',
+    icon: 'bi-incognito',
+    title: 'Incognito Covered',
+    desc: 'Private browsing is no way around it. The 60-minute wall applies in incognito windows too.',
     color: 'blue',
     paid: false
   },
   {
-    icon: 'bi-chat-dots',
-    title: 'AI Urge Companion',
-    desc: 'Having a rough moment? Talk it through instead of white-knuckling it alone.',
+    icon: 'bi-calendar-heart',
+    title: 'Grace Days',
+    desc: "You get 1 or 2 free misses a month, so one rough night doesn't wipe out your entire streak.",
+    color: 'blue',
+    paid: false
+  },
+
+  // --- PREMIUM TIER ---
+  {
+    icon: 'bi-shield-check',
+    title: 'Partner Uninstall Flow',
+    desc: "Instead of typing a passage, hitting 'Uninstall' sends a private alert to your Accountability Partner.",
     color: 'green',
     paid: true
   },
   {
-    icon: 'bi-people',
-    title: 'Joint Streaks',
-    desc: 'Team up with a friend. If you slip, they get a heads-up. It\'s easier when someone\'s got your back.',
+    icon: 'bi-chat-dots',
+    title: 'Unlimited AI Companion',
+    desc: 'Free has basic breathing. Premium unlocks deeper, unlimited conversations to help you understand your triggers.',
+    color: 'green',
+    paid: true
+  },
+  {
+    icon: 'bi-phone',
+    title: 'Multi-Device Sync',
+    desc: 'Cover your laptop, phone, and tablet together. If you try to bypass the block on one, the others know.',
     color: 'green',
     paid: true
   }

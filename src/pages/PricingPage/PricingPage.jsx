@@ -7,13 +7,14 @@ const plans = [
     name: "Lifeline",
     price: "Free",
     period: "forever",
-    desc: "The core protection. No paywalls to keep you safe.",
+    desc: "The core protection. Nothing that keeps you safe is behind a paywall.",
     features: [
-      "1 Device (Chrome)",
-      "60-Minute Vault Timer",
-      "250-Word Typo Key",
-      "Basic AI coping (Daily limit)",
-      "Breathing & Focus tools"
+      "1 device (Chrome)",
+      "60-minute vault timer",
+      "Incognito mode covered",
+      "50-word passage and 24-hour uninstall cooldown",
+      "Breathing exercises",
+      "Private personal streaks"
     ],
     cta: "Get LumaGuard",
     highlight: false
@@ -22,29 +23,30 @@ const plans = [
     name: "Pro",
     price: "$6",
     period: "/ month",
-    desc: "For the days you need an unlimited backup.",
+    desc: "For the days you want unlimited backup.",
     features: [
-      "Unlimited Devices (Phone + PC)",
+      "Unlimited devices (phone and PC)",
+      "Partner uninstall alerts",
       "Unlimited AI Companion",
-      "Full game & audio library",
-      "Priority support",
+      "Full game and audio library",
       "Everything in Lifeline"
     ],
-    cta: "Start 7-Day Free Trial",
+    cta: "Start 7-day free trial",
     highlight: true
   },
   {
     name: "Squad",
-    price: "$16.80",
+    price: "$16",
     originalPrice: "$24",
     period: "/ month",
-    desc: "For friends fighting the battle together.",
+    desc: "For friends who want to tackle this together.",
     features: [
-      "Up to 4 People",
-      "Joint Streaks",
-      "Accountability Partner alerts",
-      "Everything in Pro for everyone",
-      "30% Group Discount"
+      "Up to 4 people",
+      "Private accountability alerts",
+      "Joint group streaks",
+      "Group check-ins and shared breathing",
+      "Milestone badges and rewards",
+      "30% group discount"
     ],
     cta: "Start a Squad",
     highlight: false
@@ -54,7 +56,7 @@ const plans = [
 const faqs = [
   {
     q: "Is the free version actually useful?",
-    a: "Yes. We don't put basic safety behind a paywall like a lot of other apps do. The 60-minute timer and the Typo Key work fully on the free plan. We only charge for the extra tools and the group features."
+    a: "Yes. We don't put basic safety behind a paywall like a lot of other apps do. The 60-minute timer and the 50-word uninstall passage work fully on the free plan. We only charge for the extra tools and the group features."
   },
   {
     q: "Can I cancel anytime?",
@@ -62,7 +64,7 @@ const faqs = [
   },
   {
     q: "How does the Squad plan work?",
-    a: "One bill covers up to 4 people. You link your accounts so you can see each other's streaks, and you get an alert if someone tries to get around the vault."
+    a: "One bill covers up to 4 people. You link your accounts to share a group streak. If someone tries to get around the vault, the alert goes privately to their partner, who decides whether to tell the group."
   },
 ]
 

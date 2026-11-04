@@ -7,13 +7,14 @@ const plans = [
     name: "Lifeline",
     price: "Free",
     period: "forever",
-    desc: "The core protection. No paywalls to keep you safe.",
+    desc: "The core protection. Nothing that keeps you safe is behind a paywall.",
     features: [
-      "1 Device (Chrome)",
-      "60-Minute Vault Timer",
-      "250-Word Typo Key",
-      "Basic AI coping (Daily limit)",
-      "Breathing & Focus tools"
+      "1 device (Chrome)",
+      "60-minute vault timer",
+      "Incognito mode covered",
+      "50-word passage and 24-hour uninstall cooldown",
+      "Breathing exercises",
+      "Private personal streaks"
     ],
     cta: "Get LumaGuard",
     highlight: false
@@ -22,44 +23,45 @@ const plans = [
     name: "Pro",
     price: "$6",
     period: "/ month",
-    desc: "For the days you need an unlimited backup.",
+    desc: "For the days you want unlimited backup.",
     features: [
-      "Unlimited Devices (Phone + PC)",
+      "Unlimited devices (phone and PC)",
+      "Partner uninstall alerts",
       "Unlimited AI Companion",
-      "Full game & audio library",
-      "Priority support",
+      "Full game and audio library",
       "Everything in Lifeline"
     ],
-    cta: "Start 7-Day Free Trial",
+    cta: "Start 7-day free trial",
     highlight: true
   },
   {
     name: "Squad",
-    price: "$16.80",
+    price: "$16",
     originalPrice: "$24",
     period: "/ month",
-    desc: "For friends fighting the battle together.",
+    desc: "For friends who want to tackle this together.",
     features: [
-      "Up to 4 People",
-      "Joint Streaks",
-      "Accountability Partner alerts",
-      "Everything in Pro for everyone",
-      "30% Group Discount"
+      "Up to 4 people",
+      "Private accountability alerts",
+      "Joint group streaks",
+      "Group check-ins and shared breathing",
+      "Milestone badges and rewards",
+      "30% group discount"
     ],
     cta: "Start a Squad",
     highlight: false
   }
 ]
 
-function Pricing() {
+export default function Pricing() {
   return (
     <section className="pricing-section" id="pricing">
       <div className="pricing-container">
         
         <div className="pricing-header">
           <div className="problem-badge">Pricing</div>
-          <h2>No dark patterns. <br/>Just real protection.</h2>
-          <p>Your safety shouldn't be held hostage. The core vault is free forever.</p>
+          <h2>No tricks. <br/>Just real protection.</h2>
+          <p>Staying safe shouldn't cost you. The core vault is free, for good.</p>
         </div>
 
         <div className="pricing-grid">
@@ -103,12 +105,10 @@ function Pricing() {
         </div>
 
         <p className="pricing-note">
-          Need a plan for 6 or 10 friends? <Link to="/contact" className="btn-secondary">Contact us for large squad discounts</Link>
+          Need a plan for 6 or 10 friends? <Link to="/contact">Get in touch about bigger squads.</Link>
         </p>
 
       </div>
     </section>
   )
 }
-
-export default Pricing
