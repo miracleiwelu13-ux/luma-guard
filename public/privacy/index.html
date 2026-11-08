@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LumaGuard Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --fg:#14171c; --muted:#5a6270; --line:#e3e6ec; --accent:#0A84FF; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0d0f12; --fg:#eef0f4; --muted:#9aa2b1; --line:#252a33; --accent:#4da3ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:30px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:40px 0 8px; padding-top:8px; border-top:1px solid var(--line); }
+  p, li { color:var(--fg); }
+  .meta { color:var(--muted); margin-bottom:28px; }
+  .box { border:1px solid var(--line); border-radius:10px; padding:14px 18px; background:rgba(10,132,255,.06); }
+  a { color:var(--accent); }
+  ul { padding-left:22px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; }
+  th, td { text-align:left; border-bottom:1px solid var(--line); padding:8px 10px 8px 0; vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+<h1>LumaGuard Privacy Policy</h1>
+<p class="meta">Effective date: 8 November 2026</p>
+
+<div class="box">
+  <p><b>The short version.</b> LumaGuard never collects or sends the addresses of the sites you visit, your browsing history, or the content of pages. Everything about what you browse stays on your device. We store only what is needed for your account, your streak, and the accountability features. We do not sell your data or use it for advertising.</p>
+</div>
+
+<h2>1. Who we are</h2>
+<p>LumaGuard is a Chrome extension that blocks adult websites and supports people who want to quit porn. In this policy, "LumaGuard", "we" and "us" mean the people who run LumaGuard. You can reach us at <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a>.</p>
+
+<h2>2. What stays on your device</h2>
+<p>These things are processed or stored only in your browser and are never sent to us:</p>
+<ul>
+  <li>The addresses of pages you open. LumaGuard checks them on your device, against a built-in block list and a short keyword list, to decide whether to block a page.</li>
+  <li>Your vault timer.</li>
+  <li>Your recent chat with the AI companion, kept locally for up to 2 hours so the conversation survives a page reload.</li>
+</ul>
+
+<h2>3. What we collect and why</h2>
+<p>If you create an account, we collect the following. Without an account, LumaGuard still blocks sites, and none of this is collected.</p>
+<table>
+  <tr><th>Data</th><th>Why we need it</th></tr>
+  <tr><td>Email address and password (stored as a secure hash, never in plain text)</td><td>To create your account and log you in</td></tr>
+  <tr><td>Display name, if you set one</td><td>To show your name to accountability partners</td></tr>
+  <tr><td>Streak data: current streak, best streak, last check-in date, and the date of your most recent block</td><td>To show your "Days Safe" streak. We record only <i>that</i> a block happened on a date. We never record which site or why.</td></tr>
+  <tr><td>Accountability partner emails and invite status</td><td>To send the invitation and alerts described in section 5</td></tr>
+  <tr><td>A "last seen" time from the extension, sent every 15 minutes while you are logged in</td><td>To let your partners know if protection stops running for over 12 hours</td></tr>
+  <tr><td>A daily count of AI chat messages</td><td>To keep the free service available to everyone</td></tr>
+</table>
+
+<h2>4. The AI companion</h2>
+<p>When you use the chat in the vault, the text you type is sent to our server and forwarded to Groq, our AI provider, which writes the reply. We do not store your chat messages on our servers. Groq processes them under its own privacy terms. The AI companion is not a therapist or a medical service. Please do not share information you want kept private, and contact a qualified professional or emergency services if you are in crisis.</p>
+
+<h2>5. Accountability partners</h2>
+<p>If you invite a partner, we email them. They must accept before they receive anything. Once active, a partner may be emailed when you: open the uninstall page, complete the uninstall steps, remove them as a partner, or when LumaGuard has not been heard from for over 12 hours. These emails say that this happened. They do not include your browsing history. You decide who your partners are, and you should tell them before you invite them.</p>
+
+<h2>6. Who else handles your data</h2>
+<p>We use these service providers to run LumaGuard. They process data only on our behalf:</p>
+<ul>
+  <li><b>Supabase</b>: database, login, and server functions.</li>
+  <li><b>Groq</b>: generating AI companion replies.</li>
+  <li><b>Resend</b>: sending invitation and alert emails.</li>
+  <li><b>Vercel and GitHub</b>: hosting our website.</li>
+  <li><b>Cloudflare</b>: our domain name (DNS).</li>
+</ul>
+<p>We do not sell your personal data, share it for advertising, or use it for anything unrelated to running LumaGuard. We may disclose information if the law requires it.</p>
+
+<!-- ANALYTICS: if you add analytics later, uncomment this section and renumber, and say exactly what you collect.
+<h2>Product analytics</h2>
+<p>We collect basic, anonymous usage events (for example, that a screen was opened) to improve LumaGuard. These events never include the addresses of pages you visit, the reason a page was blocked, or the text of your chat messages.</p>
+-->
+
+<h2>7. How long we keep it</h2>
+<p>We keep your account data until you delete your account. We do not store chat messages. Daily message counters are kept only to enforce the daily limit.</p>
+
+<h2>8. Your choices and rights</h2>
+<ul>
+  <li>You can use LumaGuard without an account.</li>
+  <li>You can remove a partner at any time from the extension popup. An active partner is told when you do.</li>
+  <li>To access, correct, export or delete your data, or to delete your account, email <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a> from the address on your account. We will respond within 30 days.</li>
+  <li>Uninstalling the extension removes the data stored on your device. Account data on our servers stays until you ask us to delete it.</li>
+</ul>
+
+<h2>9. Security</h2>
+<p>Data is sent over encrypted connections. Access to our database is restricted by account-level security rules, and API keys for our providers are kept on our server, never in the extension. No system is perfectly secure, so we cannot guarantee absolute security.</p>
+
+<h2>10. Children</h2>
+<p>LumaGuard is for adults aged 18 and over. We do not knowingly collect data from anyone under 18. If you believe a child has created an account, contact us and we will delete it.</p>
+
+<h2>11. Chrome Web Store User Data Policy</h2>
+<p>LumaGuard's use of information received from Chrome APIs follows the Chrome Web Store User Data Policy, including its Limited Use requirements. We use data only to provide the features described above, and do not transfer it or use it for other purposes.</p>
+
+<h2>12. Changes</h2>
+<p>If we change this policy, we will update the date at the top. For significant changes we will also notify users in the extension or by email.</p>
+
+<h2>13. Contact</h2>
+<p>Questions about privacy: <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a>.</p>
+</main>
+</body>
+</html>
