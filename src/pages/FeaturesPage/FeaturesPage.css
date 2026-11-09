@@ -145,3 +145,8 @@
     flex-direction: column;
   }
 }
+.tier-badge.soon {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
