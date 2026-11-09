@@ -59,6 +59,11 @@ export default function PanicPage() {
           <p>"{quote}"</p>
         </div>
 
+        <p className="panic-help">
+          In crisis, or thinking about hurting yourself?{' '}
+          <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">Find a helpline in your country</a>.
+        </p>
+
       </div>
     </div>
   )
