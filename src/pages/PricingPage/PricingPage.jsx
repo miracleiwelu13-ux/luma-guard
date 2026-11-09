@@ -1,70 +1,20 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { plans } from '../../data/plans'
 import './PricingPage.css'
-
-const plans = [
-  {
-    name: "Lifeline",
-    price: "Free",
-    period: "forever",
-    desc: "The core protection. Nothing that keeps you safe is behind a paywall.",
-    features: [
-      "1 device (Chrome)",
-      "60-minute vault timer",
-      "Incognito mode covered",
-      "50-word passage and 24-hour uninstall cooldown",
-      "Breathing exercises",
-      "Private personal streaks"
-    ],
-    cta: "Get LumaGuard",
-    highlight: false
-  },
-  {
-    name: "Pro",
-    price: "$6",
-    period: "/ month",
-    desc: "For the days you want unlimited backup.",
-    features: [
-      "Unlimited devices (phone and PC)",
-      "Partner uninstall alerts",
-      "Unlimited AI Companion",
-      "Full game and audio library",
-      "Everything in Lifeline"
-    ],
-    cta: "Start 7-day free trial",
-    highlight: true
-  },
-  {
-    name: "Squad",
-    price: "$16",
-    originalPrice: "$24",
-    period: "/ month",
-    desc: "For friends who want to tackle this together.",
-    features: [
-      "Up to 4 people",
-      "Private accountability alerts",
-      "Joint group streaks",
-      "Group check-ins and shared breathing",
-      "Milestone badges and rewards",
-      "30% group discount"
-    ],
-    cta: "Start a Squad",
-    highlight: false
-  }
-]
 
 const faqs = [
   {
     q: "Is the free version actually useful?",
-    a: "Yes. We don't put basic safety behind a paywall like a lot of other apps do. The 60-minute timer and the 50-word uninstall passage work fully on the free plan. We only charge for the extra tools and the group features."
+    a: "Yes. We don't put basic safety behind a paywall like a lot of other apps do. The 60-minute timer, incognito coverage and the 100-word uninstall passage work fully on the free plan. We only plan to charge for the extra tools and the group features."
   },
   {
-    q: "Can I cancel anytime?",
-    a: "Yes. One click in your settings and you're done. No emails, no hoops."
+    q: "When can I buy Pro or Squad?",
+    a: "Not yet. Paid plans are still being built. Join the waitlist and we'll email you when they open. When they do, you'll be able to cancel any time."
   },
   {
-    q: "How does the Squad plan work?",
-    a: "One bill covers up to 4 people. You link your accounts to share a group streak. If someone tries to get around the vault, the alert goes privately to their partner, who decides whether to tell the group."
+    q: "How will the Squad plan work?",
+    a: "One bill will cover up to 4 people. You'll link your accounts to share a group streak. If someone tries to get around the vault, the alert goes privately to their partner, who decides whether to tell the group."
   },
 ]
 
@@ -91,14 +41,11 @@ export default function PricingPage() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              {plan.highlight && <div className="popular-tag">Most Popular</div>}
+              {plan.soon && <div className="popular-tag">Coming soon</div>}
               
               <h3 className="plan-name">{plan.name}</h3>
               
               <div className="plan-price-group">
-                {plan.originalPrice && (
-                  <span className="original-price">{plan.originalPrice}</span>
-                )}
                 <div className="plan-price">
                   {plan.price}<span className="plan-period">{plan.period}</span>
                 </div>
@@ -136,7 +83,7 @@ export default function PricingPage() {
 
         {/* Bottom CTA */}
         <div className="pricing-cta-bottom">
-          <p>Need a plan for 6 or 10 friends?</p>
+          <p>Need a plan for 6 or 10 friends later on?</p>
           <Link to="/contact" className="btn-secondary">Get in touch about bigger squads</Link>
         </div>
 
