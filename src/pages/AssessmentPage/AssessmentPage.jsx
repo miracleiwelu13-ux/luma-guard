@@ -86,7 +86,7 @@ function Assessment() {
         
         <div className="assessment-header">
           <h2>How are you doing?</h2>
-          <p>Just for you. Nothing is saved or shared.</p>
+          <p>Just for you. Nothing is saved or shared. This is a quick self-check, not a medical diagnosis.</p>
         </div>
 
         <div className="terminal-window">
