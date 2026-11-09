@@ -28,7 +28,7 @@ function Problem() {
               </div>
               <div className="glitch-overlay">
                 <i className="bi bi-exclamation-triangle-fill"></i>
-                <span>OVERRIDE BLOCKED</span>
+                <span>PAUSE. THINK. THEN DECIDE.</span>
               </div>
             </div>
             {/* The glitch line effect */}
@@ -49,16 +49,16 @@ function Problem() {
           </div>
           
           <h2 className="problem-headline">
-            Built to stay on. <br />
-            <span className="text-glow">Even when you want it off.</span>
+            Built to slow you down. <br />
+            <span className="text-glow">Right when it matters.</span>
           </h2>
 
           <p className="problem-text">
-            The second the urge hits, you shouldn't be able to just go to your settings, click "Disable," and turn off your protection. 
+            When an urge hits, the easiest move is to switch your protection off. LumaGuard puts time, effort and people between you and that move.
           </p>
 
           <p className="problem-text">
-            LumaGuard is designed to hold the line when your willpower can't. No easy overrides. No hidden bypasses. Just a secure vault for your focus.
+            A 60-minute vault. A 100-word passage you have to type by hand to uninstall. An optional accountability partner who is told if you try. It is not unbreakable, but it makes sure a weak moment doesn't get the final say.
           </p>
         </motion.div>
 
