@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import './FeaturesPage.css'
 
 const features = [
-  // --- THE CORE (FREE) ---
+  // --- AVAILABLE NOW (FREE) ---
   {
     icon: 'bi-hourglass-split',
     title: 'The 60-Minute Wall',
@@ -12,79 +12,92 @@ const features = [
   },
   {
     icon: 'bi-keyboard',
-    title: 'The 50-Word Free Key',
-    desc: "To uninstall the Free version, you first type a short self-help passage. Just enough friction to break the trance. Then a 24-hour cooldown begins, and when it ends we check in: 'You asked to remove LumaGuard yesterday. Still want to go ahead?'",
+    title: 'The 100-Word Key',
+    desc: 'To uninstall LumaGuard, you first type out a 100-word passage by hand. Pasting is blocked. Just enough friction to break the trance.',
     tier: 'free'
   },
   {
     icon: 'bi-incognito',
     title: 'Incognito Covered',
-    desc: 'Private browsing is no way around it. The 60-minute wall applies in incognito windows too.',
+    desc: 'Blocked sites are closed in incognito windows too. (Turn on "Allow in Incognito" for LumaGuard in Chrome.)',
     tier: 'free'
   },
   {
-    icon: 'bi-calendar-heart',
-    title: 'Grace Days',
-    desc: "You get 1 or 2 free misses a month, so one rough night doesn't wipe out your streak.",
+    icon: 'bi-chat-dots',
+    title: 'AI Companion',
+    desc: 'When a block hits, talk it through with a supportive AI coach while the timer runs. Free, with a generous daily message limit.',
+    tier: 'free'
+  },
+  {
+    icon: 'bi-calendar-check',
+    title: 'Days Safe Streak',
+    desc: 'A streak that resets if you get blocked, so it reflects real progress. Your best streak is always saved.',
     tier: 'free'
   },
   {
     icon: 'bi-wind',
-    title: 'Zero-Cost Breathing',
-    desc: 'Guided breathing exercises, ready whenever you need them, to help you settle while the timer runs. Works without internet.',
+    title: 'Breathing Screen',
+    desc: 'A calm, guided breathing screen on our website, one tap away whenever you need to settle.',
     tier: 'free'
   },
-  
-  // --- THE UPGRADES (PREMIUM) ---
-  {
-    icon: 'bi-chat-dots',
-    title: 'Unlimited AI Companion',
-    desc: 'Free has breathing exercises for urge moments. Premium adds deeper, unlimited conversations, so you can work out your triggers and get support that fits you.',
-    tier: 'premium'
-  },
+
+  // --- PREMIUM ---
   {
     icon: 'bi-shield-check',
-    title: 'The Partner Uninstall Flow',
-    desc: "Instead of typing a passage, hitting 'Uninstall' on Premium sends a private message to your Accountability Partner: 'I am trying to uninstall. Talk me down?' The 24-hour cooldown still applies.",
+    title: 'Accountability Partner',
+    desc: "Link a friend you trust. They're emailed if you open the uninstall page, finish the uninstall steps, remove them, or if LumaGuard goes silent for 12 hours.",
     tier: 'premium'
+  },
+
+  // --- ON THE ROADMAP ---
+  {
+    icon: 'bi-calendar-heart',
+    title: 'Grace Days',
+    desc: "1 or 2 free misses a month, so one rough night doesn't wipe out your streak.",
+    tier: 'free',
+    soon: true
   },
   {
     icon: 'bi-controller',
     title: 'Full Distraction Library',
     desc: 'A growing library of mini-games, puzzles, and focus soundscapes to pull your attention somewhere else.',
-    tier: 'premium'
+    tier: 'premium',
+    soon: true
   },
   {
     icon: 'bi-phone',
     title: 'Multi-Device Sync',
     desc: 'Cover your laptop, phone, and tablet together. If you try to get around the block on one, the others know.',
-    tier: 'premium'
+    tier: 'premium',
+    soon: true
   },
-
-  // --- THE MULTIPLAYER (GROUP) ---
   {
     icon: 'bi-people',
     title: 'Private & Joint Streaks',
-    desc: 'Your personal streak never resets when a friend slips. The group streak only counts days when everyone stays clean. No shame in either one.',
-    tier: 'group'
+    desc: 'Your personal streak never resets when a friend slips. The group streak only counts days when everyone stays clean.',
+    tier: 'group',
+    soon: true
   },
   {
     icon: 'bi-envelope-paper',
-    title: 'Accountability Alerts',
-    desc: "Pick a friend you trust. If you try to bypass the vault, your designated partner gets a private notification right away, and they decide whether to tell the group. Everyone else only sees an overall status, like '3 of 4 clean today.'",
-    tier: 'group'
+    title: 'Squad Accountability',
+    desc: "Up to 4 people, each with a designated partner. Everyone else only sees an overall status, like '3 of 4 clean today.'",
+    tier: 'group',
+    soon: true
   },
   {
     icon: 'bi-chat-heart',
     title: 'Group Check-Ins',
-    desc: 'Check in together, run shared breathing sessions, and cheer each other on. Squad stays worth it even in a rough week.',
-    tier: 'group'
+    desc: 'Check in together, run shared breathing sessions, and cheer each other on.',
+    tier: 'group',
+    soon: true
   },
   {
     icon: 'bi-trophy',
     title: 'Milestone Rewards',
-    desc: 'Earn badges and cosmetics at 5 days, 1 week, and 1 month. Your personal best is always saved, even if you slip.',
-    tier: 'group'
+    desc: 'Earn badges and cosmetics at 5 days, 1 week, and 1 month.',
+    tier: 'group',
+    soon: true
   }
 ]
 
@@ -110,12 +123,11 @@ export default function FeaturesPage() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
             >
               {/* Badge Logic */}
-              {feature.tier === 'premium' && (
+              {feature.soon ? (
+                <div className="tier-badge soon"><i className="bi bi-clock"></i> Coming soon</div>
+              ) : feature.tier === 'premium' ? (
                 <div className="tier-badge premium"><i className="bi bi-gem"></i> Premium</div>
-              )}
-              {feature.tier === 'group' && (
-                <div className="tier-badge group"><i className="bi bi-people-fill"></i> Squad Only</div>
-              )}
+              ) : null}
 
               <div className={`fp-icon ${feature.tier}`}>
                 <i className={`bi ${feature.icon}`}></i>
