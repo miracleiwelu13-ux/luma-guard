@@ -6,11 +6,11 @@ import './FAQPage.css'
 const faqs = [
   {
     q: "Can I just uninstall LumaGuard when I get an urge?",
-    a: "Not right away. On Free, you type a short 50-word self-help passage first. On Premium, hitting uninstall sends a message to your Accountability Partner instead. Either way, a 24-hour cooldown follows. When it ends, we check in once more: 'You asked to remove LumaGuard yesterday. Still want to go ahead?' If you do, we let you go, no judgment."
+    a: "Not in a split second. To uninstall, you first type a 100-word passage by hand (pasting is blocked). If you have an accountability partner, they're emailed when you open the uninstall page or finish it, and also if LumaGuard goes silent for 12 hours. To be honest, Chrome never lets an extension fully stop you from removing it, so LumaGuard works by adding friction and people, not force."
   },
   {
     q: "Is the free version actually useful, or just a demo?",
-    a: "It's the real thing. Free includes the 60-minute timer, incognito coverage, breathing exercises, and the uninstall cooldown. We don't put basic safety behind a paywall."
+    a: "It's the real thing. Free includes the 60-minute timer, incognito coverage, the AI companion (with a daily message limit), the Days Safe streak, and the uninstall passage. We don't put basic safety behind a paywall."
   },
   {
     q: "What happens if I try to visit a blocked site in a new tab?",
@@ -18,15 +18,15 @@ const faqs = [
   },
   {
     q: "Is my data private?",
-    a: "Yes. We don't track which sites you visit or what you search for, and the timer runs locally on your device. The only time anything gets shared is if you link an Accountability Partner, and then it's just the alert we send them."
+    a: "We never collect which sites you visit or what you search for. Those checks happen on your device. If you create an account, we store your email and your streak dates. AI chat messages are processed by our AI provider and we don't store them. Accountability partners only get the alerts described above. The full details are in our Privacy Policy."
   },
   {
-    q: "How does the Squad plan work?",
-    a: "Up to 4 people can link their accounts. Your personal streak never resets because of anyone else, and the group streak only counts days when everyone stays clean. If someone tries to bypass the vault, the alert goes privately to their partner, who decides whether to tell the group. Everyone else only sees an overall status, like '3 of 4 clean today.'"
+    q: "How will the Squad plan work?",
+    a: "Squads are coming soon. Up to 4 people will be able to link their accounts. Your personal streak never resets because of anyone else, and the group streak only counts days when everyone stays clean. If someone tries to bypass the vault, the alert goes privately to their partner, who decides whether to tell the group."
   },
   {
     q: "Will this block apps on my phone?",
-    a: "The free version blocks Chrome on your computer. Pro and Squad will include Multi-Device Sync in a future update, so you'll be able to lock down Safari on iOS, Chrome on Android, and your desktop browsers all at once."
+    a: "Not yet. Today LumaGuard blocks Chrome on your computer. Multi-device support, including Safari on iOS, Chrome on Android, and other desktop browsers, is planned for a future update."
   }
 ]
 
