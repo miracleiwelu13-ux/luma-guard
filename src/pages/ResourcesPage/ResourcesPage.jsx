@@ -93,10 +93,10 @@ export default function ResourcesPage() {
         {/* Bottom CTA */}
         <div className="resources-cta-bottom">
           <h2>Want to talk to someone?</h2>
-          <p>Our AI companion is there 24/7, or you can team up with a friend and keep each other on track.</p>
+          <p>Our AI companion is there when a block hits, or you can link a friend as your accountability partner.</p>
           <div className="cta-buttons">
             <Link to="/get-started" className="btn-primary">Get LumaGuard</Link>
-            <Link to="/pricing" className="btn-secondary">See Squad Plans</Link>
+            <Link to="/pricing" className="btn-secondary">See Pricing</Link>
           </div>
         </div>
 
