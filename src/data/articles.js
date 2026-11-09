@@ -23,7 +23,7 @@ export const articles = [
       "1. Cold water. Splash freezing cold water on your face. The shock can slow your heart rate and break the panic spiral.",
       "2. Move. Do 20 pushups or go for a fast walk. It pulls your attention out of your head and into your muscles.",
       "3. Say it out loud. Try: 'I'm having an urge, and I'm not going to act on it.' Hearing yourself say it helps you step back from the feeling and think clearly again.",
-      "LumaGuard's 60-minute timer gives you the space to do all three. And if you try to uninstall it, a 24-hour cooldown kicks in. That's a full day to change your mind."
+      "LumaGuard's 60-minute timer gives you the space to do all three. And if you try to uninstall it, you'll have to type out a 100-word passage by hand first. That's a few minutes to change your mind."
     ]
   },
   {
@@ -80,7 +80,7 @@ export const articles = [
       "2. Drop the shame. It happened and it's done. Beating yourself up only makes the next slip more likely.",
       "3. Go outside. Move your body and change your surroundings.",
       "4. Reset your streak, but don't count it as losing everything. You're building a muscle. You dropped the weight, and you're still stronger than when you started.",
-      "LumaGuard is here to help you get back up, not to judge you for falling. And if you ever feel like quitting the app, uninstalling means typing a short 50-word self-help passage, then waiting out a 24-hour cooldown. After that, we'll ask if you still want to go. That gives you a full day to think it over."
+      "LumaGuard is here to help you get back up, not to judge you for falling. And if you ever feel like quitting the app, uninstalling means typing out a 100-word passage by hand. That gives you a few minutes to think it over."
     ]
   }
 ]
