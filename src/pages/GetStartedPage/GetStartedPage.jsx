@@ -1,15 +1,37 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY } from '../../config'
 import './GetStartedPage.css'
 
 export default function GetStartedPage() {
   const [email, setEmail] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setError('')
+    setSending(true)
+    try {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/waitlist`, {
+        method: 'POST',
+        headers: {
+          apikey: SUPABASE_PUBLISHABLE_KEY,
+          'Content-Type': 'application/json',
+          Prefer: 'return=minimal'
+        },
+        body: JSON.stringify({ email: email.trim() })
+      })
+      // 409 = this email is already on the list, which is fine for the visitor
+      if (res.ok || res.status === 409) setSubmitted(true)
+      else setError('Something went wrong. Please try again in a moment.')
+    } catch {
+      setError('Could not connect. Check your internet and try again.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -32,7 +54,7 @@ export default function GetStartedPage() {
             >
               <i className="bi bi-check-circle-fill"></i>
               <h3>You're on the list.</h3>
-              <p>Keep an eye on your inbox. We'll send your download link soon.</p>
+              <p>Keep an eye on your inbox. We'll email you when LumaGuard is available.</p>
             </motion.div>
           ) : (
             <form className="gs-form" onSubmit={handleSubmit}>
@@ -43,9 +65,13 @@ export default function GetStartedPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <button type="submit" className="btn-primary">Join the Waitlist</button>
+              <button type="submit" className="btn-primary" disabled={sending}>
+                {sending ? 'Joining...' : 'Join the Waitlist'}
+              </button>
             </form>
           )}
+
+          {error && <p className="gs-error">{error}</p>}
 
           <div className="gs-features-list">
             <div className="gs-feature">
@@ -85,11 +111,11 @@ export default function GetStartedPage() {
                 <div className="ext-stats">
                   <div className="stat">
                     <span className="stat-num">14</span>
-                    <span className="stat-label">Days safe</span>
+                    <span className="stat-label">Days safe (example)</span>
                   </div>
                   <div className="stat">
                     <span className="stat-num">0</span>
-                    <span className="stat-label">Bypass attempts</span>
+                    <span className="stat-label">Blocks today (example)</span>
                   </div>
                 </div>
               </div>
