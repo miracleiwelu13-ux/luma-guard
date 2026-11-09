@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { CONTACT_EMAIL } from '../../config'
 import './Footer.css'
 
 export default function Footer() {
@@ -33,14 +34,13 @@ export default function Footer() {
             <Link to="/resources">Resources</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/contact">Contact Us</Link>
-            <a href="mailto:support@lumaguard.com">Email Support</a>
+            <a href={`mailto:${CONTACT_EMAIL}`}>Email Support</a>
           </div>
 
           {/* Contact Info */}
           <div className="footer-col">
             <h4>Get in Touch</h4>
-            <p><i className="bi bi-envelope"></i> hello@lumaguard.com</p>
-            <p><i className="bi bi-telephone"></i> +1 (555) 000-0000</p>
+            <p><i className="bi bi-envelope"></i> {CONTACT_EMAIL}</p>
             <p><i className="bi bi-geo-alt"></i> Remote / Online</p>
           </div>
 
@@ -51,15 +51,11 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Luma Guard. All rights reserved.</p>
           
           <div className="footer-legal">
-            <Link to="/privacy">Privacy Policy</Link>
-            <Link to="/terms">Terms of Service</Link>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
           </div>
 
-                   <div className="footer-socials">
-            <a href="#discord" aria-label="Discord"><i className="bi bi-discord"></i></a>
-            <a href="#reddit" aria-label="Reddit"><i className="bi bi-reddit"></i></a>
-            <a href="#github" aria-label="GitHub"><i className="bi bi-github"></i></a>
-          </div>
+
         </div>
 
       </div>
