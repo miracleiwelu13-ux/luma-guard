@@ -9,7 +9,7 @@
   <p align="center">
     The blocker that actually blocks.
     <br />
-    <a href="YOUR-VERCEL-LINK-HERE"><strong>View Live Site »</strong></a>
+    <a href="lumaguard.app"><strong>View Live Site »</strong></a>
   </p>
 </div>
 
@@ -17,7 +17,7 @@
 
 LumaGuard is a next-generation focus and porn-blocking tool designed for when willpower isn't enough. 
 
-Unlike traditional blockers that let you bypass them the second an urge hits, LumaGuard is built like a vault. When a user tries to access a blocked site, a mandatory 60-minute timer starts. If they leave the tab, refresh, or try again, the timer resets. To uninstall the extension, users must perfectly type a randomized 250-word paragraph.
+Unlike traditional blockers that let you bypass them the second an urge hits, LumaGuard is built like a vault. When a user tries to access a blocked site, a mandatory 60-minute timer starts. If they leave the tab, refresh, or try again, the timer resets. To uninstall the extension, users must perfectly type a randomized 100-word passage.
 
 This repository contains the **marketing landing page** for the LumaGuard Chrome Extension. 
 
@@ -35,7 +35,7 @@ This repository contains the **marketing landing page** for the LumaGuard Chrome
 *   **Interactive Assessment:** A 5-question diagnostic test that calculates the user's relationship with porn and provides empathetic feedback.
 *   **Dynamic Pricing:** Clearly separates the Free (Lifeline), Pro, and Squad (Group) tiers to prevent false advertising.
 *   **Resource Library:** A fully built article system with a dynamic router for reading recovery content.
-*   **Panic Page:** A dedicated `/panic` route that hides the navbar/footer and provides a full-screen breathing exercise and AI companion for users in crisis.
+*   **Panic Page:** A dedicated `/panic` route that hides the navbar/footer and provides a full-screen breathing exercise for users in crisis.
 
 ## 🚀 Getting Started
 
@@ -45,4 +45,4 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+   git clone https://github.com/miracleiwelu13-ux/luma-guard.git
