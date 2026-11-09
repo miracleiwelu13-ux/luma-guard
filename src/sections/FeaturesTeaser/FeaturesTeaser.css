@@ -115,3 +115,6 @@
     padding: 30px;
   }
 }
+.paid-badge.soon {
+  color: var(--text-muted);
+}
