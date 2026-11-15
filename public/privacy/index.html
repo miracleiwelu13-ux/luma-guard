@@ -24,81 +24,85 @@
 <body>
 <main>
 <h1>LumaGuard Privacy Policy</h1>
-<p class="meta">Effective date: 8 November 2026</p>
+<p class="meta">Effective date: 15 November 2026. Applies to the LumaGuard Android app.</p>
 
 <div class="box">
-  <p><b>The short version.</b> LumaGuard never collects or sends the addresses of the sites you visit, your browsing history, or the content of pages. Everything about what you browse stays on your device. We store only what is needed for your account, your streak, and the accountability features. We do not sell your data or use it for advertising.</p>
+  <p><b>The short version.</b> LumaGuard checks the names of websites on your phone and stops adult ones. We do not keep a record of the sites you visit. We store only what is needed for your account and your streak. There are no ads, no analytics, and we do not sell your data.</p>
 </div>
 
 <h2>1. Who we are</h2>
-<p>LumaGuard is a Chrome extension that blocks adult websites and supports people who want to quit porn. In this policy, "LumaGuard", "we" and "us" mean the people who run LumaGuard. You can reach us at <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a>.</p>
+<p>LumaGuard is an Android app that blocks adult websites and supports people who want to quit porn. In this policy, "LumaGuard", "we" and "us" mean the people who run LumaGuard. You can reach us at <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a>.</p>
 
-<h2>2. What stays on your device</h2>
-<p>These things are processed or stored only in your browser and are never sent to us:</p>
+<h2>2. How the blocker works</h2>
+<p>LumaGuard uses Android's VPN feature to create a local VPN on your phone. It is not a connection to a VPN company. Only website name lookups (DNS) are routed through it, and the rest of your internet traffic is not touched.</p>
 <ul>
-  <li>The addresses of pages you open. LumaGuard checks them on your device, against a built-in block list and a short keyword list, to decide whether to block a page.</li>
-  <li>Your vault timer.</li>
-  <li>Your recent chat with the AI companion, kept locally for up to 2 hours so the conversation survives a page reload.</li>
+  <li>Lookups for adult websites are stopped on your phone, using a block list and a short keyword list stored in the app.</li>
+  <li>All other lookups are forwarded to Cloudflare's family DNS service (1.1.1.3 and 1.0.0.3), which also filters adult sites. Cloudflare handles them under its own privacy policy.</li>
+  <li>LumaGuard does not store, log or share these lookups, and does not use them for advertising.</li>
+  <li>Currently the forwarded lookups are not encrypted. We plan to move them to an encrypted connection.</li>
 </ul>
 
-<h2>3. What we collect and why</h2>
-<p>If you create an account, we collect the following. Without an account, LumaGuard still blocks sites, and none of this account data is collected. Separately, if you join the waitlist on our website, we store the email address you enter, only to tell you when LumaGuard is available.</p>
+<h2>3. What stays on your device</h2>
+<ul>
+  <li>The website lookups described above.</li>
+  <li>Whether protection is on, and the timers for the 1-hour cooldown.</li>
+  <li>The dates on which a site was blocked, until they have been sent to your streak (section 4).</li>
+</ul>
+
+<h2>4. What we collect and why</h2>
+<p>You need an account to use LumaGuard. We collect:</p>
 <table>
   <tr><th>Data</th><th>Why we need it</th></tr>
-  <tr><td>Email address and password (stored as a secure hash, never in plain text)</td><td>To create your account and log you in</td></tr>
-  <tr><td>Display name, if you set one</td><td>To show your name to accountability partners</td></tr>
-  <tr><td>Streak data: current streak, best streak, last check-in date, and the date of your most recent block</td><td>To show your "Days Safe" streak. We record only <i>that</i> a block happened on a date. We never record which site or why.</td></tr>
-  <tr><td>Accountability partner emails and invite status</td><td>To send the invitation and alerts described in section 5</td></tr>
-  <tr><td>A "last seen" time from the extension, sent every 15 minutes while you are logged in</td><td>To let your partners know if protection stops running for over 12 hours</td></tr>
+  <tr><td>Email address and password (stored as a secure hash, never in plain text)</td><td>To create your account, log you in, and reset your password</td></tr>
+  <tr><td>An account ID</td><td>To link your data to your account</td></tr>
+  <tr><td>Streak data: current streak, best streak, and the dates on which a site was blocked</td><td>To show your "days safe" streak. We record only <i>that</i> a block happened on a date. We never record which site.</td></tr>
   <tr><td>A daily count of AI chat messages</td><td>To keep the free service available to everyone</td></tr>
+  <tr><td>A note that you agreed to the VPN explanation</td><td>To avoid asking you again</td></tr>
 </table>
 
-<p>If you contact us from the website's contact page, your email app opens with your message. We receive only what you choose to send, and use it only to reply.</p>
+<h2>5. The AI companion</h2>
+<p>When you use the chat on the urge screen, the text you type (the last few messages) is sent to our server and forwarded to Groq, our AI provider, which writes the reply. We do not store your chat messages. Groq processes them under its own privacy terms. The AI companion is not a therapist or a medical service. Please do not share information you want kept private, and contact a qualified professional or emergency services if you are in crisis.</p>
 
-<h2>4. The AI companion</h2>
-<p>When you use the chat in the vault, the text you type is sent to our server and forwarded to Groq, our AI provider, which writes the reply. We do not store your chat messages on our servers. Groq processes them under its own privacy terms. The AI companion is not a therapist or a medical service. Please do not share information you want kept private, and contact a qualified professional or emergency services if you are in crisis.</p>
+<h2>6. Permissions the app uses</h2>
+<table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Internet</td><td>Login, streak sync, the AI chat, and forwarding lookups</td></tr>
+  <tr><td>VPN service</td><td>The local blocker described in section 2</td></tr>
+  <tr><td>Notifications</td><td>To tell you a site was blocked and offer urge support</td></tr>
+  <tr><td>Run at startup</td><td>To restart protection after your phone restarts</td></tr>
+  <tr><td>Device administrator (optional)</td><td>To stop LumaGuard being uninstalled on impulse. It is off by default, and you can turn it off in the app after the cooldown. It gives us no access to your data.</td></tr>
+</table>
 
-<h2>5. Accountability partners</h2>
-<p>If you invite a partner, we email them. They must accept before they receive anything. Once active, a partner may be emailed when you: open the uninstall page, complete the uninstall steps, remove them as a partner, or when LumaGuard has not been heard from for over 12 hours. These emails say that this happened. They do not include your browsing history. You decide who your partners are, and you should tell them before you invite them.</p>
-
-<h2>6. Who else handles your data</h2>
+<h2>7. Who else handles your data</h2>
 <p>We use these service providers to run LumaGuard. They process data only on our behalf:</p>
 <ul>
   <li><b>Supabase</b>: database, login, and server functions.</li>
   <li><b>Groq</b>: generating AI companion replies.</li>
-  <li><b>Resend</b>: sending invitation and alert emails.</li>
-  <li><b>Vercel and GitHub</b>: hosting our website.</li>
-  <li><b>Cloudflare</b>: our domain name (DNS).</li>
+  <li><b>Resend</b>: sending login confirmation and password reset emails.</li>
+  <li><b>Cloudflare</b>: family DNS filtering (section 2), our website, and our domain name.</li>
 </ul>
 <p>We do not sell your personal data, share it for advertising, or use it for anything unrelated to running LumaGuard. We may disclose information if the law requires it.</p>
 
-<!-- ANALYTICS: if you add analytics later, uncomment this section and renumber, and say exactly what you collect.
-<h2>Product analytics</h2>
-<p>We collect basic, anonymous usage events (for example, that a screen was opened) to improve LumaGuard. These events never include the addresses of pages you visit, the reason a page was blocked, or the text of your chat messages.</p>
--->
-
-<h2>7. How long we keep it</h2>
+<h2>8. How long we keep it</h2>
 <p>We keep your account data until you delete your account. We do not store chat messages. Daily message counters are kept only to enforce the daily limit.</p>
 
-<h2>8. Your choices and rights</h2>
+<h2>9. Your choices and deleting your account</h2>
 <ul>
-  <li>You can use LumaGuard without an account.</li>
-  <li>You can remove a partner at any time from the extension popup. An active partner is told when you do.</li>
-  <li>To access, correct, export or delete your data, or to delete your account, email <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a> from the address on your account. We will respond within 30 days.</li>
-  <li>Uninstalling the extension removes the data stored on your device. Account data on our servers stays until you ask us to delete it.</li>
+  <li><b>Delete your account in the app:</b> on the home screen, tap Delete account and type DELETE. Your account, streak and chat usage are deleted permanently.</li>
+  <li><b>If you cannot open the app,</b> see <a href="/delete-account">lumaguard.app/delete-account</a> or email <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a> from the address on your account. We will respond within 30 days.</li>
+  <li>To access, correct or export your data, email us at the same address.</li>
+  <li>You can turn off protection and the uninstall block in the app. Both use a passage and a 1-hour cooldown by design, to help you avoid acting on impulse.</li>
+  <li>Uninstalling the app removes the data stored on your device. Account data on our servers stays until you delete your account.</li>
 </ul>
 
-<h2>9. Security</h2>
-<p>Data is sent over encrypted connections. Access to our database is restricted by account-level security rules, and API keys for our providers are kept on our server, never in the extension. No system is perfectly secure, so we cannot guarantee absolute security.</p>
+<h2>10. Security</h2>
+<p>Connections to our servers are encrypted. Access to our database is restricted by account-level security rules, and API keys for our providers are kept on our server, never in the app. As noted in section 2, forwarded website lookups are not yet encrypted. No system is perfectly secure, so we cannot guarantee absolute security.</p>
 
-<h2>10. Children</h2>
+<h2>11. Children</h2>
 <p>LumaGuard is for adults aged 18 and over. We do not knowingly collect data from anyone under 18. If you believe a child has created an account, contact us and we will delete it.</p>
 
-<h2>11. Chrome Web Store User Data Policy</h2>
-<p>LumaGuard's use of information received from Chrome APIs follows the Chrome Web Store User Data Policy, including its Limited Use requirements. We use data only to provide the features described above, and do not transfer it or use it for other purposes.</p>
-
 <h2>12. Changes</h2>
-<p>If we change this policy, we will update the date at the top. For significant changes we will also notify users in the extension or by email.</p>
+<p>If we change this policy, we will update the date at the top. For significant changes, such as new features that use your data in new ways, we will also notify users in the app or by email.</p>
 
 <h2>13. Contact</h2>
 <p>Questions about privacy: <a href="mailto:miracleiwelu13@gmail.com">miracleiwelu13@gmail.com</a>.</p>
