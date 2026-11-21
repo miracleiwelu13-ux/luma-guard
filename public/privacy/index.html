@@ -48,6 +48,7 @@
   <li>Whether protection is on, and the timers for the 1-hour cooldown.</li>
   <li>The dates on which a site was blocked, until they have been sent to your streak (section 4).</li>
   <li>Your "My reasons" note, the name and phone number of the person you chose to call, and the urge tags you pick (like "Bored" or "Stressed"). These are stored only on your phone and are never sent to us. Uninstalling the app or deleting your account removes them.</li>
+  <li>Premium features: your Night shield hours, your progress in the 30-Day Reset, and your sound choices. Night shield and the 30-Day Reset are stored only on your phone.</li>
   <li>When you tap the call button, your phone's dialer opens with that number. LumaGuard does not place the call or see it.</li>
 </ul>
 
@@ -62,6 +63,7 @@
   <tr><td>A note that you agreed to the VPN explanation</td><td>To avoid asking you again</td></tr>
   <tr><td>An AI reply you choose to report, if any</td><td>To review and improve the safety of the AI companion</td></tr>
   <tr><td>A note that you finished the intro screen</td><td>To avoid showing it again</td></tr>
+  <tr><td>Premium only: the name you choose to show, and the email address of each accountability partner you invite (up to 3), with whether they accepted</td><td>To send your partner the invite, and to email them if you start turning off your protection. Partners never see what you browse. If you remove a partner, or delete your account, their address is deleted, and removing an active partner emails them to say so.</td></tr>
 </table>
 
 <h2>5. The AI companion</h2>
@@ -72,7 +74,7 @@
   <tr><th>Permission</th><th>Why</th></tr>
   <tr><td>Internet</td><td>Login, streak sync, the AI chat, and forwarding lookups</td></tr>
   <tr><td>VPN service</td><td>The local blocker described in section 2</td></tr>
-  <tr><td>Notifications</td><td>To tell you a site was blocked and offer urge support</td></tr>
+  <tr><td>Notifications</td><td>To tell you a site was blocked and offer urge support, and, if you turn on Night shield, to tell you when it starts</td></tr>
   <tr><td>Run at startup</td><td>To restart protection after your phone restarts</td></tr>
   <tr><td>Device administrator (optional)</td><td>To stop LumaGuard being uninstalled on impulse. It is off by default, and you can turn it off in the app after the cooldown. It gives us no access to your data.</td></tr>
 </table>
@@ -82,7 +84,7 @@
 <ul>
   <li><b>Supabase</b>: database, login, and server functions.</li>
   <li><b>Groq</b>: generating AI companion replies.</li>
-  <li><b>Resend</b>: sending login confirmation and password reset emails.</li>
+  <li><b>Resend</b>: sending login confirmation and password reset emails, and, for Premium, partner invites and alerts.</li>
   <li><b>Cloudflare</b>: family DNS filtering (section 2), our website, and our domain name.</li>
 </ul>
 <p>We do not sell your personal data, share it for advertising, or use it for anything unrelated to running LumaGuard. We may disclose information if the law requires it.</p>
